@@ -1,0 +1,97 @@
+# Introduction:
+print("Welcome to Game 1!")
+print("")
+print("Today we will be using the very basics: print(), if, and input()!")
+print("")
+
+print("Play now? (y/n)")
+play = input()
+if play == "n":
+    print("Are you sure? The game will end... (y/n)")
+    play = input()
+if play == "y":
+    print("")
+    print("The hero destined to save our kingdom awakes from their slumber.")
+    print("What was the hero called again?")
+    name = input()
+    print("")
+    print("Ah, ")
+    print(name)
+    print("Of course, that was it.")
+    print("")
+    print("Does...")
+    print(name)
+    print("... leave the bed? (y/n)")
+    if input() == "y":
+        print("")
+        print("The hero leaves the bed.")
+        print("Does the hero leave the house? (y/n)")
+        if input() == "y":
+            print("")
+            print("The hero runs out the house, unfed and unclothed.")
+            print("Surprisingly, the guards refuse to believe in the naked quest to save the kingdom.")
+            print("The hero gets locked up, and never seen again...")
+        else:
+            print("")
+            print("The hero almost runs out the house in excitement, but reconsiders.")
+            print("'Surely nothing could be wrong with taking the time to get dressed first.'")
+            print("'A nice healthy breakfast might be fine, too...'")
+            print("...")
+            print("As the hero finishes eating, someone knocks on the door.")
+            print("Steven: 'Hello? ...")
+            print(name)
+            print("... are you there? (y/n)")
+            print("")
+            if input() == "y":
+                print("Of course the hero answers truthfully and welcomes in their old friend Steven.")
+                print("They talk all day, forgetting all about saving the kingdom.")
+            else:
+                print("'Nobody here by that name! Go away you fiend!', shouts the hero.")
+                print("Steven, always being quite emotional, runs away in tears.")
+                print("But nothing a hero has time to deal with. Time to go save the kingdom!")
+                print("But where does the hero go to save the kingdom... (city/mountain/swamp)")
+                location = input()
+                print("")
+                if location == "city":
+                    print("The hero heads to the city.")
+                    print("In an attempt to save the kingdom from overpriced bread,"
+                    print("they slay the evil baker and liberate the inhabitants.")
+                    print("Overpriced bread swiftly becomes a thing of the past.")
+                else:
+                    if location == "mountain":
+                        print("The hero climbs up into the mountains!")
+                        print("In an attempt to save the kingdom from the local dragon,")
+                        print("they climb into the dragon's lair... which is empty.")
+                        print("Convinced of having slain the dragon by reflex while blinking...")
+                        print("The hero returns home.")
+                    else if location == "swamp":
+                        print("The hero heads into the local swamp.")
+                        print("After some time, they find something sparkly in the dangerous mud...")
+                        print("... A bracelet that belongs to Steven!")
+                        print("What did that emotional fool do now to disturb the quest.")
+                        print("Does the hero search for Steven? (y/n)")
+                        if input() == "y":
+                            print("")
+                            print("The hero searches the swamp for Steven.")
+                            print("After some time, the hero finds Steven nearby.")
+                            print("Severely hurt.")
+                            print("Barely alive even.")
+                            print("Having no choice now, the hero rescues Steven by carrying him to the local doctor.")
+                        else:
+                            print("")
+                            print("A hero can't waste their time on the weak.")
+                            print("The hero moves on, traveling for two days.")
+                            print("Eventually remembering...")
+                            print("that the whole story of being a hero...")
+                            print("was just a dream...")
+                            print("The hero returns home. Strange, Steven is nowhere to be found.")
+                            print("Lonely...")
+                            print(name)
+                            print("...returns back to the usual field work.")
+    else:
+        print("The hero...")
+        print(name)
+        print("remains in bed all day. Let the kingdom save itself.")
+# else the game just ends
+print("Enter to close game...")
+input()
