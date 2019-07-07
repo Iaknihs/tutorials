@@ -54,7 +54,7 @@ if play == "y":
                 print("")
                 if location == "city":
                     print("The hero heads to the city.")
-                    print("In an attempt to save the kingdom from overpriced bread,"
+                    print("In an attempt to save the kingdom from overpriced bread,")
                     print("they slay the evil baker and liberate the inhabitants.")
                     print("Overpriced bread swiftly becomes a thing of the past.")
                 else:
@@ -64,30 +64,31 @@ if play == "y":
                         print("they climb into the dragon's lair... which is empty.")
                         print("Convinced of having slain the dragon by reflex while blinking...")
                         print("The hero returns home.")
-                    else if location == "swamp":
-                        print("The hero heads into the local swamp.")
-                        print("After some time, they find something sparkly in the dangerous mud...")
-                        print("... A bracelet that belongs to Steven!")
-                        print("What did that emotional fool do now to disturb the quest.")
-                        print("Does the hero search for Steven? (y/n)")
-                        if input() == "y":
-                            print("")
-                            print("The hero searches the swamp for Steven.")
-                            print("After some time, the hero finds Steven nearby.")
-                            print("Severely hurt.")
-                            print("Barely alive even.")
-                            print("Having no choice now, the hero rescues Steven by carrying him to the local doctor.")
-                        else:
-                            print("")
-                            print("A hero can't waste their time on the weak.")
-                            print("The hero moves on, traveling for two days.")
-                            print("Eventually remembering...")
-                            print("that the whole story of being a hero...")
-                            print("was just a dream...")
-                            print("The hero returns home. Strange, Steven is nowhere to be found.")
-                            print("Lonely...")
-                            print(name)
-                            print("...returns back to the usual field work.")
+                    else:
+                        if location == "swamp":
+                            print("The hero heads into the local swamp.")
+                            print("After some time, they find something sparkly in the dangerous mud...")
+                            print("... A bracelet that belongs to Steven!")
+                            print("What did that emotional fool do now to disturb the quest.")
+                            print("Does the hero search for Steven? (y/n)")
+                            if input() == "y":
+                                print("")
+                                print("The hero searches the swamp for Steven.")
+                                print("After some time, the hero finds Steven nearby.")
+                                print("Severely hurt.")
+                                print("Barely alive even.")
+                                print("Having no choice now, the hero rescues Steven by carrying him to the local doctor.")
+                            else:
+                                print("")
+                                print("A hero can't waste their time on the weak.")
+                                print("The hero moves on, traveling for two days.")
+                                print("Eventually remembering...")
+                                print("that the whole story of being a hero...")
+                                print("was just a dream...")
+                                print("The hero returns home. Strange, Steven is nowhere to be found.")
+                                print("Lonely...")
+                                print(name)
+                                print("...returns back to the usual field work.")
     else:
         print("The hero...")
         print(name)
