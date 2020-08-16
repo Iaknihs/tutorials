@@ -1,0 +1,69 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://new_theme.tres" type="Theme" id=1]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.172549, 0.223529, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 117.0
+margin_top = 154.0
+margin_right = 362.0
+margin_bottom = 646.0
+
+[node name="MainLabel" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 245.0
+margin_bottom = 40.0
+text = "Main Menu"
+align = 1
+valign = 1
+
+[node name="placeholder" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 44.0
+margin_right = 245.0
+margin_bottom = 342.0
+text = "
+
+
+
+
+
+"
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 346.0
+margin_right = 245.0
+margin_bottom = 392.0
+text = "Do something"
+
+[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 396.0
+margin_right = 245.0
+margin_bottom = 442.0
+text = " Do more stuff "
+
+[node name="Button3" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 446.0
+margin_right = 245.0
+margin_bottom = 492.0
+text = "Exit"
